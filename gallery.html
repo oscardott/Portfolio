@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oscar Wong Portfolio Gallery</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/my-styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/cuw0gvd.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="min-h-screen">
+        <!-- Header / Navigation -->
+        <header class="w3-container pribg">
+                <nav class="pribg">
+                    <ul class="topnav " id="myTopnav" style="padding-left: 0;">
+                        <a style="text-decoration: none" class="home ter" href="index.html">OSCAR WONG</a>
+                        <a style="text-decoration: none" href="gallery.html">Gallery</a>
+                        <a style="text-decoration: none" href="about.html">About</a>
+                        <a style="text-decoration: none" href="resume.html">Resume</a>
+                        <a style="text-decoration: none" href="contact.html">Contact</a>
+                        <a style="padding: 23px 23px 23px 23px" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars w3-text-white"></i>
+                        </a>
+                    </ul>
+                </nav>
+            </header>
+
+        <!-- Portfolio Grid Section -->
+        <main id="projects" class="main-content">
+            <h2 class="section-title">Portfolio Gallery</h2>
+
+            <!-- Image Gallery Grid -->
+            <div class="portfolio-grid">
+
+                <!-- Example Project 1: Tall Aspect Ratio -->
+                <button
+                    class="portfolio-item"
+                    data-img-src="assets/OscarWong_TagetesErecta300.jpg"
+                    data-caption="OSCAR WONG | Botanical Illustration"
+                >
+                    <img src="assets/OscarWong_TagetesErecta72.jpg" alt="Tall Mobile View Thumbnail">
+                    <div class="item-overlay">
+                        <p style="margin-left: 1%;">Botanical Illustration</p>
+                    </div>
+                </button>
+
+                <!-- Example Project 2: Wide Aspect Ratio -->
+                <button
+                    class="portfolio-item"
+                    data-img-src="assets/OscarWong_Jiangshi300.jpg"
+                    data-caption="OSCAR WONG | Sticker Illustration"
+                >
+                    <img src="assets/OscarWong_Jiangshi72.jpg" alt="Sticker Illustration">
+                    <div class="item-overlay">
+                        <p style="margin-left: 1%;">Sticker Illustration</p>
+                    </div>
+                </button>
+
+                <!-- Project 3: Editorial Illustration -->
+                <button
+                    class="portfolio-item"
+                    data-img-src="assets/OscarWong_Editorial300.jpg"
+                    data-caption="OSCAR WONG | Editorial Illustration"
+                >
+                    <img src="assets/OscarWong_Editorial72.jpg" alt="Editorial Illustration">
+                    <div class="item-overlay">
+                        <p style="margin-left: 1%;">Editorial Illustration</p>
+                    </div>
+                </button>
+                
+                <!-- Example Project 4: Standard Aspect Ratio -->
+                <button
+                    class="portfolio-item"
+                    data-img-src="assets/OscarWong_Magazine300.jpg"
+                    data-caption="OSCAR WONG | Magazine Cover"
+                >
+                    <img src="assets/OscarWong_Magazine72.jpg" alt="Magazine Cover">
+                    <div class="item-overlay">
+                        <p style="margin-left: 1%;">Magazine Cover</p>
+                    </div>
+                </button>
+                <!-- Example Project 5: Very Wide Aspect Ratio -->
+                <button
+                    class="portfolio-item"
+                    data-img-src="assets/OscarWong_MTA300.jpg"
+                    data-caption="OSCAR WONG | MTA Poster Illustration"
+                    
+                >
+                    <img src="assets/OscarWong_MTA72.jpg" alt="MTA Poster Illustration">
+                    <div class="item-overlay">
+                        <p style="margin-left: 1%;">MTA Poster Illustration</p>
+                    </div>
+                </button>
+
+            </div>
+        </main>
+
+        <!-- THE REUSABLE MODAL STRUCTURE -->
+        <div id="imageModal" class="modal modal-hidden" role="dialog">
+            <!-- Modal Content Container -->
+            <div class="modal-content-container">
+                
+                <!-- Image Area (with navigation controls) -->
+                <div id="modalImageArea" class="modal-image-area">
+                    <img id="modalImage" src="" alt="Enlarged Project View" class="modal-image">
+
+                    <!-- Previous Button -->
+                    <button id="prevButton" class="nav-button">
+                        <!-- Chevron Left Icon -->
+                        <svg class="svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+
+                    <!-- Next Button -->
+                    <button id="nextButton" class="nav-button">
+                        <!-- Chevron Right Icon -->
+                        <svg class="svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Caption and Close Button Area -->
+                <div class="modal-caption-bar secbg">
+                    <p id="modalCaption" class="modal-caption ter" style="padding-left: 1rem;"></p>
+                    
+                </div>
+            </div>
+            <button id="closeModalButton">
+                <!-- Close Icon (X) -->
+                <svg class="svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+    <footer>
+        <div class="secbg" style="padding: 24px;">
+            <p class="ter">&copy; Copyright <span class="ter" id="year"></span> Oscar Wong</p>
+        </div>
+    </footer>
+
+        <script src="javascript/navbar.js" defer></script>
+        <script src="javascript/imagemodal.js" defer></script>
+    </body>
+</html>

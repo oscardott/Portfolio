@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Oscar Wong Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/my-styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/cuw0gvd.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div>
+            <header class="w3-container pribg">
+                <nav>
+                    <ul class="topnav" id="myTopnav" style="padding-left: 0;">
+                        <a style="text-decoration: none" class="home ter" href="index.html">OSCAR WONG</a>
+                        <a style="text-decoration: none" href="gallery.html">Gallery</a>
+                        <a style="text-decoration: none" href="about.html">About</a>
+                        <a style="text-decoration: none" href="resume.html">Resume</a>
+                        <a style="text-decoration: none" href="contact.html">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                             <i class="fa fa-bars w3-text-white"></i>
+                        </a>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="w3-container">
+                <h1>Portfolio Gallery</h1>
+            </div>
+            <!--
+            <section class="w3-container">
+                <p>Below there are three row images that use different combinations of row styles to 
+                    create a gallery page. Each row is a &lt;section&gt; that has three images. 
+                    Each image is part of a set of markup that includes a heading and a paragraph 
+                    holding the image. The heading and image are contained in an &lt;article&gt; 
+                    element.</p>
+            </section>
+            -->    
+
+            <section class="w3-row-padding">
+                
+                <article class="w3-col s12 m4 l4">
+                    <h4>Botanical Illustration</h4>
+                    <p><img src="assets/OscarWong_TagetesErecta72.jpg" alt="Illustration of a flower" onclick="openModal();currentSlide(1)" class="hover-shadow"></p>
+                </article>
+                <article class="w3-col s12 m4 l4">
+                    <h4>Character Illustration</h4>
+                    <p><img src="assets/OscarWong_Jiangshi72.jpg" alt="Illustration of a character" onclick="openModal();currentSlide(2)" class="hover-shadow"></p>
+                </article>
+                <article class="w3-col s12 m4 l4">
+                    <h4>Magazine Layout</h4>
+                    <p><img src="assets/OscarWong_Magazine72.jpg" alt="Layout of a magazine cover" onclick="openModal();currentSlide(3)" class="hover-shadow"></p>
+                </article>
+                    <article class="w3-col s12 m4 l4">
+                    <h4>Poster Design</h4>
+                    <p><img src="assets/OscarWong_Dolphin72.jpg" alt="Poster of a dolphin" onclick="openModal();currentSlide(4)" class="hover-shadow"></p>
+                </article>
+            </section>
+            
+            <footer>
+                <p>&copy; Copyright 2025</p>
+            </footer>
+        </div>
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="assets/OscarWong_TagetesErecta72.jpg" alt="Illustration of a flower" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="assets/OscarWong_Jiangshi72.jpg" alt="Illustration of a character" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="assets/OscarWong_Magazine72.jpg" alt="Layout of a magazine cover" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="assets/OscarWong_Dolphin72.jpg" alt="Poster of a dolphin" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="assets/OscarWong_TagetesErecta72.jpg" onclick="currentSlide(1)" alt="Tagetes Erecta" style="width:300px;">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="assets/OscarWong_Jiangshi72.jpg" onclick="currentSlide(2)" alt="Jiangshi" style="width: 300px;">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="assets/OscarWong_Magazine72.jpg" onclick="currentSlide(3)" alt="Magazine" style="width: 300px;">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="assets/OscarWong_Dolphin72.jpg" onclick="currentSlide(4)" alt="Dolphin" style="width:300px;">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="secbg" style="padding: 12px;">
+        <p class="ter">&copy; Copyright <span class="ter" id="year"></span> Oscar Wong</p>
+    </div>
+  </footer>
+  <script src="javascript/navbar.js" defer></script>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!-- THIS RESUME TEMPLATE USES W3.CSS. IT HAS A SIDEBAR ON THE LEFT. 
+    IT ALSO USES FONT AWESOME ICONS.
+    I MODIFIED A TEMPLATE FROM CODEPEN TO CUSTOMIZE THIS TEMPLATE FOR OUR CLASS. 
+    I'VE ALSO ADDED SOME HELPFUL INSTRUCTIONS FOR YOU.
+    READ EACH OF THE COMMENTS IN THE CODE FOR INSTRUCTIONS!
+Source: https://codepen.io/nathan-sr/pen/WNgPLvr -->
+<html lang="en">
+    <head>
+        <!-- Remember to replace this title with the name of your website! -->
+        <title>Oscar Wong Resume</title>
+
+        <!-- Keep this stuff. It makes the site responsive and makes w3.css work. -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       
+        <!-- Keep this too. This template uses Font Awesome icons, and this makes them work.  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- The example uses the Roboto google font. If you are using a different font, swap out this link
+        for the link to your fonts. -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <link rel="stylesheet" href="css/my-styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/cuw0gvd.css">
+
+        <!-- YOU CAN DELETE THIS EMBEDDED CSS. USE YOUR OWN CSS FILE 
+        WITH YOUR OWN FONT.  -->
+
+    </head>
+
+
+    <body>
+        <header class="w3-container pribg">
+                <nav class="pribg">
+                    <ul class="topnav " id="myTopnav" style="padding-left: 0;">
+                        <a style="text-decoration: none" class="home" href="index.html">OSCAR WONG</a>
+                        <a style="text-decoration: none" href="gallery.html">Gallery</a>
+                        <a style="text-decoration: none" href="about.html">About</a>
+                        <a style="text-decoration: none" href="resume.html">Resume</a>
+                        <a style="text-decoration: none" href="contact.html">Contact</a>
+                        <a style="padding: 23px 23px 23px 23px" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                             <i class="fa fa-bars w3-text-white"></i>
+                        </a>
+                    </ul>
+                </nav>
+        </header>
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+            <div class="w3-row-padding">
+            
+                <!-- Left Column -->
+                <div class="w3-third">
+                
+                    <div class="w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="assets/OscarWong_Dog.jpg" style="width:100%" alt="Avatar">
+                            <div class=" w3-container w3-text-black">
+                                <h2>Oscar Wong</h2>
+                            </div>
+                        </div>
+                        <div class="w3-container">
+
+                            <!--HOW TO USE FONT AWESOME ICONS
+                                This template uses these font awesome icons. to use a font awesome icon, 
+                                1. go to this site and find an icon you like: https://fontawesome.com/icons 
+                                2. Grab the name of the icon. Let's say you choose "cube." Then, go down to one of the places below that has 
+                                classes of "fa" and "fa-[something]." You are going to replace the word "something" with "cube."
+                                3. That's it! the line of code should read something like: 
+                                <p><i class="fa fa-cube fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+                            -->
+
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large sec"></i>Illustrator</p>
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large sec"></i>Brooklyn, NY</p>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large sec"></i>oscarwong917@gmail.com</p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large sec"></i>(347) 988-6801</p>
+                            <hr>
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right sec"></i>Skills</b></p>
+                            <p>Adobe Suite</p>
+                            <p>Photography</p>
+                            <p>Illustration</p>
+                            <p>Media</p>
+
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right sec"></i>Languages</b></p>
+                            <p>English</p>
+                            <p>Chinese</p>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+
+                <!-- End Left Column -->
+                </div>
+
+                <!-- Right Column -->
+                <div class="w3-twothird">
+                
+                <div class="w3-container w3-card w3-margin-bottom">
+                    <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge sec"></i>Experience</h2>
+                    <div class="w3-container">
+                    <h5 class=><b>Design Student</b></h5>
+                    <h6 class="sec"><i class="fa fa-calendar fa-fw w3-margin-right "></i>Sep 2023 - <span class="w3-tag w3-round pribg">Current</span></h6>
+                    <p>Developing many skills in visual communication, working on projects involving illustration, design, and drafting</p>
+                    <hr>
+                    </div>
+                    <!--<div class="w3-container">
+                    <h5 class=><b>Design Intern / something.com</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+                    <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                    <hr>
+                    </div>
+                    <div class="w3-container">
+                    <h5 class=><b>Manager / ABC Store</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                    </div>-->
+                </div>
+
+                <div class="w3-container w3-card">
+                    <h2 class="w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge sec"></i>Education</h2>
+                    <div class="w3-container">
+                    <h5 class=><b>W3Schools.com</b></h5>
+                    <h6 class="sec"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+                    <p>Web Development Learning</p>
+                    <hr>
+                    </div>
+                    <div class="w3-container">
+                    <h5 class=><b>NYC College of Technology</b></h5>
+                    <h6 class="sec"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - <span class="w3-tag pribg w3-round">Current</span></h6>
+                    <p>Bachelor of Fine Arts (BFA), Communication Design (in progress)</p>
+                    <hr>
+                    </div>
+                    <div class="w3-container">
+                    <h5 class=><b>Brooklyn Technical High School</b></h5>
+                    <h6 class="sec"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2023</h6>
+                    <p>High School Diploma</p><br>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+                </div>
+                
+            <!-- End Grid -->
+            </div>
+        
+        <!-- End Page Container -->
+        </div>
+
+        <footer>
+            <div class="secbg" style="padding: 24px;">
+                <p class="ter">&copy; Copyright <span class="ter" id="year"></span> Oscar Wong</p>
+            </div>
+        </footer>
+        <script src="javascript/navbar.js" defer></script>
+    </body>
+
+</html>
