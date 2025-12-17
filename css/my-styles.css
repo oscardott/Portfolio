@@ -24,7 +24,8 @@ header {
 }
 
 a {
-    font-size: 24px
+    font-size: 24px;
+    color: #f4f3f2;
 }
 
 .pri {
@@ -48,15 +49,9 @@ a {
 }
 
 .terbg {
-    color:#f4f3f2;  
+    background-color:#f4f3f2;  
 }
 
-header h1 {
-    color: #fbf6ec; 
-    font-family: miller-banner, serif;
-    font-weight: 800;
-    font-style: normal;
-}
 
 h1{
     font-family: miller-banner, serif;
@@ -64,6 +59,12 @@ h1{
     font-style: normal;
     font-size: 80px;
     line-height: 120px;
+}
+
+h2{
+    font-family: avenir-lt-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 h4{
@@ -78,11 +79,7 @@ h6 {
     font-style: normal;
 }
 
-h2{
-    font-family: avenir-lt-pro, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
+
 
 p {
     font-size: 16px;
@@ -207,7 +204,6 @@ footer {
         line-height: 1.5;
         color: #212529;
         text-align: left;
-        background-color: #fff;
         padding: 50px;
         padding-bottom: 100px;
         border: 1px solid #ced4da;
@@ -239,7 +235,6 @@ footer {
         font-weight: 400;
         line-height: 1.5;
         color: #495057;
-        background-color: #fff;
         background-clip: padding-box;
         border: 1px solid #ced4da;
         outline: none;
@@ -320,19 +315,16 @@ footer {
     }
 
     .fcf-btn-primary {
-        color: #fff;
         background-color: #007bff;
         border-color: #007bff;
     }
 
     .fcf-btn-primary:hover {
-        color: #fff;
         background-color: #0069d9;
         border-color: #0062cc;
     }
 
     .fcf-btn-primary:focus, .fcf-btn-primary.focus {
-        color: #fff;
         background-color: #0069d9;
         border-color: #0062cc;
         box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
